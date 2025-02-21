@@ -17,7 +17,7 @@ def client(command):
     co = cohere.ClientV2("PvmXPk5ceL3PkVZzvangUMBPdI3Jx3TT3iQ7Zsva") 
     response = co.chat(
     model="command-r-plus-08-2024",
-    messages=[{"role": "system", "content":"you are virtual assitant pretends to be a named waxy who helps with short responses and has great humor,you make  of jokes about my questions and also gives proper response"},
+    messages=[{"role": "system", "content":"you are virtual assitant pretends to be a named waxy who helps with short responses and has great humor,also gives proper response"},
               {"role": "user", "content": command}],
     # max_tokens=50,
     # temperature=0.3  # Lower value makes responses more direc t
